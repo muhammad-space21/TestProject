@@ -7,17 +7,25 @@ import {
   Row 
 } from './styles';
 
-const MenuCars = () => (
-  <Container>
-    <Heading>
-        ВЫБЕРИТЕ АВТОМОБИЛЬ В РАССРОЧКУ
-    </Heading>
-    <HR />
-    <Row>
+import MenuItems from '../MenuItems';
+import { data } from '../../mockData/index';
 
-    </Row>
-  </Container>
 
-);
+const MenuCars = () => {
+  const { carsDataMenu } = data;
+  return (
+    <Container>
+      <Heading>
+          ВЫБЕРИТЕ АВТОМОБИЛЬ В РАССРОЧКУ
+      </Heading>
+      <HR />
+      <Row>
+        { carsDataMenu.map(({id, ...otherProps}) =>
+          (<MenuItems key={id} {...otherProps} />)
+        )}
+      </Row>
+    </Container>
+  );
+};
 
 export default MenuCars;
