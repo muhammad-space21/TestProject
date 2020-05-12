@@ -9,6 +9,7 @@ export const NavbarStyled = styled(Navbar)`
   font-family: 'Varela Round', sans-serif;
   padding-left: 50px;
   padding-right: 50px;
+  position: fixed;
 `;
 
 export const NavStyled = styled(Nav)`
