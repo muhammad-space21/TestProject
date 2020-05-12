@@ -12,7 +12,7 @@ const Header = () => (
       <h2>ОТ 60 000 СУМ В ДЕНЬ</h2>
     </Heading>
     <ButtonContainer>
-      <ButtonPrimary />
+      <ButtonPrimary>Подробнее</ButtonPrimary>
     </ButtonContainer>
   </Container>
 );

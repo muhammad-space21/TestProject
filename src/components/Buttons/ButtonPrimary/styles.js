@@ -1,4 +1,13 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+const getButtonStyles = props => {
+    if (props.secondary) {
+        return Secondary;
+    } else {
+      return Container;
+    }
+};
+
 
 export const Container = styled.button`
   width: 150px;
@@ -17,4 +26,26 @@ export const Container = styled.button`
   &:focus {
     outline: none;
   }
+  ${getButtonStyles}
+`;
+
+export const Secondary = css`
+  width: 223px;
+  height: 45px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  background-color: #000000;
+  border-radius: 0px;
+  transition: 0.5s;
+    &:hover {
+      cursor: pointer;
+      background-color: #00CE1B;
+    }
+    &:focus {
+      outline: none;
+    }
 `;

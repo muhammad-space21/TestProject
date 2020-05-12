@@ -17,7 +17,7 @@ const MenuItems = ({model, imageUrl, price, props}) => (
     </ImageContainer>
     <Model small {...props}>{model}</Model>
     <Price>{price}</Price>
-    <ButtonPrimary />
+    <ButtonPrimary>Подробнее</ButtonPrimary>
   </Container>
 );
 
