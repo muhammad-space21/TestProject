@@ -7,6 +7,7 @@ import MenuCars from '../../components/MenuCars';
 import BrandIcons from '../../components/BrandIcons';
 // import CarouselOfCars from '../../components/CarouselOfCars';
 import SalesInstruction from '../../components/SalesInstruction';
+import Footer from '../../containers/Footer';
 
 const Homepage = () => (
   <Container>
@@ -15,6 +16,7 @@ const Homepage = () => (
     <BrandIcons />
     {/* <CarouselOfCars /> */}
     <SalesInstruction />
+    <Footer />
   </Container>
 );
 
