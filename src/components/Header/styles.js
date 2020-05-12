@@ -39,7 +39,7 @@ export const Heading = styled.div`
       font-family: 'Montserrat' sans-serif;
       margin-top: 20px;
     }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1100px) {
       font-size: 70px;
       line-height: 90px;
       text-align: center;
@@ -50,4 +50,16 @@ export const Heading = styled.div`
       line-height: 50px;
       text-align: center;
     }
+`;
+
+export  const ButtonContainer = styled.div`
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+  @media screen and (max-width: 1100px) {
+    justify-content: center;
+  }
 `;

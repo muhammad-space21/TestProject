@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Container, Heading } from './styles';
+import { Container, Heading, ButtonContainer } from './styles';
+import ButtonPrimary from '../Buttons/ButtonPrimary';
 
 
 const Header = () => (
@@ -10,6 +11,9 @@ const Header = () => (
       И HYUNDAI В РАССРОЧКУ
       <h2>ОТ 60 000 СУМ В ДЕНЬ</h2>
     </Heading>
+    <ButtonContainer>
+      <ButtonPrimary />
+    </ButtonContainer>
   </Container>
 );
 
