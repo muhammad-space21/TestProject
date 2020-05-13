@@ -1,19 +1,31 @@
 import styled from 'styled-components';
+import Slider from "react-slick";
 
 export const Container = styled.div`
-  width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 30%;
+  height: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+    &:focus {
+      outline: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  &:hover {
+    /* opacity: 0.5; */
+    cursor: grab;
+    transition: 2s;
+  }
 `;
 
-export const ItemStyle = styled.div`
-  width: 300px;
-  height: 100px;
-  border: 2px solid red;
-`;
-
-export const Item1 = styled.div`
-  background-image: url('../../assets/images/1-2.jpg');
-  background-position: center;
-  background-size: cover;
+export const SliderStyled = styled(Slider)`
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 200px;
 `;

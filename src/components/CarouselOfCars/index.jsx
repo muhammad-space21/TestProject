@@ -1,29 +1,79 @@
-import React, { Component } from 'react';
-import Carousel from 'react-elastic-carousel';
-import {Item1} from './styles';
+import React from 'react';
 
-// import Img1 from '../../assets/images/1-2.jpg';
-// import Img2 from '../../assets/images/1-3.jpg';
-// import Img3 from '../../assets/images/1-4.jpg';
+import { Container, SliderStyled } from './styles';
 
-class CarouselOfCars extends Component {
-  state = {
-    items: [
-      {id: 1, image: Item1},
-      {id: 2, title: 'item #2'},
-      {id: 3, title: 'item #3'},
-      {id: 4, title: 'item #4'},
-      {id: 5, title: 'item #5'}
-    ]
-  }
+import  Img1 from '../../assets/images/1-2.jpg';
+import Img2 from '../../assets/images/1-3.jpg';
+import Img3 from '../../assets/images/1-4.jpg';
+import Img4 from '../../assets/images/santa-fi.jpg';
+import Img5 from '../../assets/images/foto-sonata.jpg';
 
-  render () {
-    const { items } = this.state;
+class CarouselOfCars extends React.Component {
+
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 5,
+      autoplay: true,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
     return (
-      <Carousel itemsToScroll={5} itemsToShow={5}>
-        {items.map(item => <div key={item.id}>{item.image}</div>)}
-      </Carousel>
-    )
+      <SliderStyled {...settings}>
+        <Container>
+          <img src={Img1} alt='' />
+        </Container>
+        <Container>
+          <img src={Img2} alt=''/>
+        </Container>
+        <Container>
+          <img src={Img3} alt=''/>
+        </Container>
+        <Container>
+          <img src={Img4} alt=''/>
+        </Container>
+        <Container>
+          <img src={Img5} alt=''/>
+        </Container>
+      </SliderStyled>
+    );
   }
 };
 
