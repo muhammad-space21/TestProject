@@ -12,6 +12,12 @@ import {
   H6
 } from './styles';
 
+import IconFacebook from '../../assets/icons/facebook.JPG';
+import IconTwitter from '../../assets/icons/twitter.JPG';
+import IconGoogle from '../../assets/icons/google.JPG';
+import IconUtube from '../../assets/icons/utube.JPG';
+import IconInsta from '../../assets/icons/insta.JPG';
+
 const Footer = () => (
   <Container>
     <Row>
@@ -31,11 +37,11 @@ const Footer = () => (
       <Wrapper>
         <Title>Следите за нами</Title>
         <SocialFollow>
-          <Icons></Icons>
-          <Icons></Icons>
-          <Icons></Icons>
-          <Icons></Icons>
-          <Icons></Icons>
+      <Icons><img src={IconFacebook} alt=""/></Icons>
+          <Icons><img src={IconTwitter} alt=""/></Icons>
+          <Icons><img src={IconGoogle} alt=""/></Icons>
+          <Icons><img src={IconUtube} alt=""/></Icons>
+          <Icons><img src={IconInsta} alt=""/></Icons>
         </SocialFollow>
       </Wrapper>
 

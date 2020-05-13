@@ -93,7 +93,7 @@ export const Icons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E8E9EC;
+  background-color: #FFFFFF;
   margin-right: 10px;
   @media screen and (max-width: 800px) {
     width: 30px;
@@ -101,9 +101,10 @@ export const Icons = styled.div`
   }
     &:hover {
       cursor: pointer;
+      opacity: 0.9;
     }
     img {
-      width: 15px;
+      width: 17px;
       height: 15px;
     }
 `;

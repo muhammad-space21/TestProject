@@ -27,5 +27,13 @@ export const SliderStyled = styled(Slider)`
   display: flex;
   justify-content: space-between;
   margin-top: 200px;
-  margin-bottom: 200px;
+`;
+
+export const ButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
 `;

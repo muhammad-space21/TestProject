@@ -14,10 +14,10 @@ const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
 const App = () => {
   return (
     <Container>
-      <NavbarMain />
       <Switch>
         <ErrorBoundary>
           <Suspense fallback={<Spinner />}>
+            <NavbarMain />
             <Route exact path='/' component={Homepage} />
             <Route exact path='/description' component={DescriptionPage} />
             <Route exact path='/calculator' component={CalculatorPage} />

@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, SliderStyled } from './styles';
+import { Container, SliderStyled, ButtonWrapper } from './styles';
+
+import ButtonPrimary from '../Buttons/ButtonPrimary';
 
 import  Img1 from '../../assets/images/1-2.jpg';
 import Img2 from '../../assets/images/1-3.jpg';
@@ -56,6 +58,7 @@ class CarouselOfCars extends React.Component {
       ]
     };
     return (
+      <>
       <SliderStyled {...settings}>
         <Container>
           <img src={Img1} alt='' />
@@ -73,6 +76,10 @@ class CarouselOfCars extends React.Component {
           <img src={Img5} alt=''/>
         </Container>
       </SliderStyled>
+      <ButtonWrapper>
+        <ButtonPrimary applyBtn >ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+      </ButtonWrapper>
+      </>
     );
   }
 };
