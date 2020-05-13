@@ -4,14 +4,18 @@ import {
   NavbarStyled, 
   NavStyled, 
   NavLinkStyled,
-  NavDropdownStyled,
+  NavLinkStyledBlack,
   NavItemStyled,
   HR,
-  NavbarBrand
+  NavbarBrand,
+  NavbarToggle
 } from './styles';
 
-import { Navbar, NavDropdown } from 'react-bootstrap';
+import './styles.scss';
+
+import { Navbar } from 'react-bootstrap';
 import IconPhone from '../../assets/icons/phone-icon.png';
+import IconMenu from '../../assets/icons/menu-icon.png';
 import BrandLogo from '../../assets/images/logo@2x-1.png';
 
 export const NavbarMain = () => (
@@ -19,17 +23,16 @@ export const NavbarMain = () => (
       <NavbarBrand href="#home"> 
         <img src={BrandLogo} alt="Brand-logo"/> 
       </NavbarBrand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <NavbarToggle aria-controls="responsive-navbar-nav"> <img src={IconMenu} alt='icon' /> </NavbarToggle>
+      <Navbar.Collapse id="responsive-navbar-nav">
         <NavStyled className="ml-auto">
           <NavLinkStyled href="#home">Главная</NavLinkStyled>
-          
-            <NavDropdownStyled title="Автомобили" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            </NavDropdownStyled>
-          
+          <li><a className='nav-item' href="Автомобили">Автомобили</a>
+            <ul className="sub-menu">
+              <NavLinkStyledBlack href="#link">Новые автомобили</NavLinkStyledBlack>
+              <NavLinkStyledBlack href="#link">С пробегом</NavLinkStyledBlack>
+            </ul>
+          </li>        
           <NavLinkStyled href="#link">Как купить</NavLinkStyled>
           <NavLinkStyled href="#link">Партнеры</NavLinkStyled>
           <NavLinkStyled href="#Контакты">Контакты</NavLinkStyled>

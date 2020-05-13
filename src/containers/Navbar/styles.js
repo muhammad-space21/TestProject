@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export const NavbarStyled = styled(Navbar)`
   width: 100vw;
@@ -10,30 +10,76 @@ export const NavbarStyled = styled(Navbar)`
   padding-left: 50px;
   padding-right: 50px;
   position: fixed;
+  @media screen and (max-width: 991px) {
+    padding-right: 40px;
+    padding-left: 30px;
+  }
 `;
 
 export const NavStyled = styled(Nav)`
   display: flex;
   flex-direction: row;
   align-items: center;
+    @media screen and (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: white;
+      height: 400px;
+    }
+`;
+
+export const NavLinkStyledBlack = styled(Nav.Link)`
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: black;
+  margin-right: 30px;
+    &:hover {
+      color: #523FDC; 
+    }
+  @media screen and (max-width: 1100px) {
+    padding-right: 20px;
+  }
+  @media screen and (max-width: 991px) {
+    color:  #523FDC;
+    margin-right: 0px;
+  }
 `;
 
 export const NavLinkStyled = styled(Nav.Link)`
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
-  color: #ffffff;
+  color: white;
   margin-right: 30px;
   &:hover {
     color: white;
+    &::before {
+      width: 70px;
+    }
   }
-`;
-
-export const NavDropdownStyled = styled(NavDropdown)`
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 300;
-  color: #ffffff;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    background-color: #523FDC;
+    height: 3px;
+    width: 0;
+    transition: .3s;
+    border-radius: 3px;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 991px) {
+      color: black;
+      &:hover {
+        color: #523FDC;
+      }
+  }
+  
 `;
 
 export const NavItemStyled = styled(Nav.Item)`
@@ -51,6 +97,12 @@ export const NavItemStyled = styled(Nav.Item)`
     color: #ffffff;
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
+      @media screen and (max-width: 991px) {
+        color: black;
+        &:hover {
+          color: #523FDC;
+        }
+      }
   }
 `;
 
@@ -70,5 +122,18 @@ export const NavbarBrand = styled(Navbar.Brand)`
   img {
     width: 80%;
     height: 25px;
+  }
+  @media screen and (max-width: 991px) {
+    margin-left: -20px;
+  }
+`;
+
+export const NavbarToggle = styled(Navbar.Toggle)`
+  &:focus {
+    outline: none;
+  }
+  img {
+    width: 35px;
+    height: 20px;
   }
 `;
