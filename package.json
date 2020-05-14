@@ -17,6 +17,7 @@
     "react-scripts": "3.4.1",
     "react-slick": "^0.26.1",
     "react-styled-carousel": "^0.5.1",
+    "react-super-responsive-table": "^5.1.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.0"
   },
