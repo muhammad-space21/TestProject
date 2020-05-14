@@ -51,7 +51,11 @@ const DescriptionComponentOne = () => (
     <Row>
       <Col1>
       <ModelHide>Accent MPI 1.4</ModelHide>
-        <ImageGallery bulletClass='bullet' showFullscreenButton={false} showPlayButton={false}  items={images} />;
+        <ImageGallery 
+          showFullscreenButton={false} 
+          showPlayButton={false}  
+          items={images}
+        />
       </Col1>
       <Col2>
         <Title>АВТОМОБИЛЬ В КРЕДИТ</Title>

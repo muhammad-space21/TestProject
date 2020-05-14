@@ -7,6 +7,10 @@ const getButtonStyles = props => {
         return ApplyBtn;
     } else if (props.applyBtnWhite) {
         return ApplyBtnWhite;
+    } else if (props.printBtn) {
+      return PrintBtn;
+    } else if (props.orderBtn) {
+      return OrderBtn;
     } else {
       return Container;
     }
@@ -96,4 +100,57 @@ export const ApplyBtnWhite = css`
     &:focus {
       outline: none;
     }
+`;
+
+export const PrintBtn = css`
+  width: 180px;
+  height: 45px;
+  border: none;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  background-color: white;
+  text-transform: uppercase;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: white; 
+    }
+    &:focus {
+      outline: none;
+    }
+`;
+
+export const OrderBtn = css`
+  width: 180px;
+  height: 45px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  background-color: #523FDC;
+  text-transform: uppercase;
+  border-radius: 0px;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+
 `;
