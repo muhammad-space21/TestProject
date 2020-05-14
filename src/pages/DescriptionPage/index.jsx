@@ -9,7 +9,7 @@ import Footer from '../../containers/Footer';
 
 const DescriptionPage = () => (
   <Container>
-    <CarsDescriptionComponent />
+    <CarsDescriptionComponent descriptionPage />
     <CarouselOfCars />
     <SalesInstruction />
     <Footer />

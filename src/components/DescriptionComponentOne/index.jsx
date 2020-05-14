@@ -46,8 +46,8 @@ const images = [
 ];
 
 
-const DescriptionComponentOne = () => (
-  <Container>
+const DescriptionComponentOne = (props) => (
+  <Container {...props}>
     <Row>
       <Col1>
       <ModelHide>Accent MPI 1.4</ModelHide>

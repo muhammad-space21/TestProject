@@ -10,6 +10,7 @@ import NavbarMain from './containers/Navbar';
 const Homepage = lazy(() => import('./pages/Homepage'));
 const DescriptionPage = lazy(() => import('./pages/DescriptionPage'));
 const CalculatorPage = lazy(() => import('./pages/CalculatorPage'));
+const FormPage = lazy(() => import('./pages/FormPage'));
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route exact path='/' component={Homepage} />
             <Route exact path='/description' component={DescriptionPage} />
             <Route exact path='/calculator' component={CalculatorPage} />
+            <Route exact path='/form' component={FormPage} />
           </Suspense>
         </ErrorBoundary>
       </Switch>
