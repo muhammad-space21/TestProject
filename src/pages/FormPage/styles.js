@@ -10,4 +10,9 @@ export const Container = styled.div`
   align-items: center;
   background-image: url(${ImageBackground});
   background-size: cover;
+    @media screen and (max-width: 800px) {
+      object-fit: cover;
+      background-position: center;
+
+    }
 `;

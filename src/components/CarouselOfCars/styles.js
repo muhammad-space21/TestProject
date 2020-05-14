@@ -15,7 +15,6 @@ export const Container = styled.div`
       object-fit: cover;
     }
   &:hover {
-    /* opacity: 0.5; */
     cursor: grab;
     transition: 2s;
   }

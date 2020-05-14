@@ -57,6 +57,7 @@ class CarouselOfCars extends React.Component {
         }
       ]
     };
+
     return (
       <>
       <SliderStyled {...settings}>

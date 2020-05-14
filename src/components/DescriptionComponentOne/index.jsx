@@ -55,6 +55,7 @@ const DescriptionComponentOne = (props) => (
           showFullscreenButton={false} 
           showPlayButton={false}  
           items={images}
+          showNav={false}
         />
       </Col1>
       <Col2>

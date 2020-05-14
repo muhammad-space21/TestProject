@@ -55,6 +55,7 @@ const DescriptionComponentThree = () => (
           showFullscreenButton={false} 
           showPlayButton={false}  
           items={images} 
+          showNav={false}
         />
       </Col1>
       <Col2>
