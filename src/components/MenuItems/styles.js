@@ -10,18 +10,21 @@ export const Container = styled.div`
   @media screen and (max-width: 1100px) {
     width: 60%;
   }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const ImageContainer = styled.div`
   width: 100%;
   height: 50%;
-  &:hover{
+  &:hover {
     box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   }
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   
 `;

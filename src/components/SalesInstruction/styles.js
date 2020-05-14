@@ -22,8 +22,14 @@ export const Heading = styled.h1`
     line-height: 45px;
   }
   @media screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 35px;
     margin-left: 0;
     margin-right: 0;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 25px;
+    line-height: 30px;
   }
 `;
 

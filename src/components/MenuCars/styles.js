@@ -10,9 +10,6 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   background-color: white;
-
-  /* background-color: #dfe6e9; */
-  /* #b2bec3 #636e72 */
 `;
 
 export const Heading = styled.h1`
@@ -28,8 +25,14 @@ export const Heading = styled.h1`
     line-height: 45px;
   }
   @media screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 35px;
     margin-left: 0;
     margin-right: 0;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 25px;
+    line-height: 30px;
   }
 `;
 

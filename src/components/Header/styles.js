@@ -17,6 +17,10 @@ export const Container = styled.div`
   @media screen and (max-width: 1100px) {
     background-position: center;
   }
+  @media screen and (max-width: 768px) {
+    background-image: 
+      linear-gradient(to top, #523fdc, #3437a6, #222b71, #191d3d, #0b0b0c);
+  }
 `;
 
 export const Heading = styled.div`

@@ -14,14 +14,13 @@ import {
 import ButtonPrimary from '../../components/Buttons/ButtonPrimary';
 
 
-
 class Form extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      firstname: '',
-      secondname: '',
+      name: '',
+      surname: '',
       phone: '',
       id_zmarket: '',
       submitted: false
@@ -38,17 +37,17 @@ class Form extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const {
-      firstname, 
-      secondname, 
+      name, 
+      surname, 
       phone, 
       id_zmarket
     } = this.state;
     this.setState({ submitted: true })
     // clear form
-    if (firstname && secondname && phone && id_zmarket) {
+    if (name && surname && phone && id_zmarket) {
       this.setState({
-        firstname: '',
-        secondname: '',
+        name: '',
+        surname: '',
         phone: '',
         id_zmarket: '',
         submitted: false
@@ -59,8 +58,8 @@ class Form extends React.Component {
 
   render() {
     const {
-      firstname, 
-      secondname, 
+      name, 
+      surname, 
       phone, 
       id_zmarket, 
       submitted
@@ -75,41 +74,41 @@ class Form extends React.Component {
 
           <Input
             type="text"
-            name="firstname"
-            placeholder="Firstname"
-            value={firstname}
+            name="name"
+            placeholder="Name"
+            value={name}
             onChange={this.handleChange}
           />
           { 
-            submitted && !firstname &&
+            submitted && !name &&
             <ErrorMessage>Name is missing!</ErrorMessage>
           }
           {
-            firstname !== '' && firstname.length < 3 ?
+            name !== '' && name.length < 3 ?
             <ErrorMessage>Name must be more than 2 characters</ErrorMessage>
             : null
           }
 
           <Input
             type="text"
-            name="secondname"
-            placeholder="Lastname"
-            value={secondname}
+            name="surname"
+            placeholder="Surname"
+            value={surname}
             onChange={this.handleChange}
           />
           { 
-            submitted && !secondname && 
-            <ErrorMessage>Lastname is missing!</ErrorMessage>
+            submitted && !surname && 
+            <ErrorMessage>Surname is missing!</ErrorMessage>
           }
           {
-            secondname !== '' && secondname.length < 3 ? 
-            <ErrorMessage>Lastname must be more than 2 characters</ErrorMessage>
+            surname !== '' && surname.length < 3 ? 
+            <ErrorMessage>Surname must be more than 2 characters</ErrorMessage>
             : null
           }
           <Input
             type="tel"
             name="phone"
-            placeholder="phone number"
+            placeholder="Phone number"
             value={phone}
             onChange={this.handleChange}
           />

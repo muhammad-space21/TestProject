@@ -23,15 +23,15 @@ const Footer = () => (
     <Row>
       <Wrapper>
         <Title>Автомобили</Title>
-          <LinkStyle>Авто GM</LinkStyle>
-          <LinkStyle>Авто Hyundai</LinkStyle>
-          <LinkStyle>Б/У АВТО</LinkStyle>
+          <LinkStyle to='/avto-gm'>Авто GM</LinkStyle>
+          <LinkStyle to='/avto-hyundai'>Авто Hyundai</LinkStyle>
+          <LinkStyle to='/b/u-avto'>Б/У АВТО</LinkStyle>
       </Wrapper>
 
       <Wrapper>
         <Title>О нас</Title>
-        <LinkStyle>Контакты</LinkStyle>
-        <LinkStyle>Карьера</LinkStyle>
+        <LinkStyle to='/contacts'>Контакты</LinkStyle>
+        <LinkStyle to='/career'>Карьера</LinkStyle>
       </Wrapper>
 
       <Wrapper>
@@ -44,7 +44,6 @@ const Footer = () => (
           <Icons><img src={IconInsta} alt=""/></Icons>
         </SocialFollow>
       </Wrapper>
-
     </Row>
     <HrDotted />
     <H6>© All rights reserved</H6>

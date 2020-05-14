@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 98vh;
   background-color: black;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     height: fit-content;
   }
 `;
@@ -17,7 +17,7 @@ export const Row = styled.div`
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1100px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,7 +28,11 @@ export const Row = styled.div`
 export const Col1 = styled.div`
   width: 46%;
   height: 100%;
-  @media screen and (max-width: 991px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 1100px) {
     width: 90%;
     margin-bottom: 30px;
   }
@@ -41,7 +45,7 @@ export const Col2 = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     width: 95%;
   }
 `;
@@ -55,7 +59,7 @@ export const Title = styled.h1`
   text-transform: uppercase;
   align-self: flex-start;
   margin-left: 50px;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 `;
@@ -80,7 +84,7 @@ export const Model = styled.span`
     font-size: 45px;
     line-height: 45px;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 `;
@@ -92,7 +96,7 @@ export const ModelHide = styled.span`
   color: white;
   display: none;
   font-family: 'Roboto', sans-serif;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     display: block;
     font-size: 45px;
     line-height: 45px;
@@ -106,7 +110,7 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     width: 100%;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -120,7 +124,7 @@ export const ButtonsWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1100px) {
     width: 60%;
     margin-top: 50px;
   }

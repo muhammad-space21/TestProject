@@ -13,6 +13,10 @@ export const Container = styled.div`
   background-image: url(${ImageBackgrround});
   background-position: center; 
   background-size: cover;
+  @media screen and (max-width: 768px) {
+    background-image: 
+      linear-gradient(to top, #523fdc, #3437a6, #222b71, #191d3d, #0b0b0c);
+  }
 `;
 
 export const Row = styled.div`

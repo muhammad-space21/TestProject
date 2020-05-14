@@ -1,41 +1,44 @@
 import styled from 'styled-components';
 
 export const StyledSignUpPage = styled.div`
-    width: fit-content;
-    height: fit-content;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    padding-top: 50px;
+	width: fit-content;
+	height: fit-content;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	padding-top: 50px;
 `;
 
 export const FormStyled = styled.form`
-    width: 100%;
-    margin-top: 30px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+	width: 100%;
+	margin-top: 30px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
 `;
 
 export const Input = styled.input`
-    width: 350px;
-    height: 40px;
-    border: 1px solid #CCCCCC;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    border-radius: 3px;
+	width: 350px;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	border-radius: 3px;
 
     &::placeholder {
-        font-size: 14px;
-        color: #CCCCCC;
-        font-weight: 400;
-        line-height: normal;
-        text-indent: 10px;
+			font-size: 14px;
+			color: #CCCCCC;
+			font-weight: 400;
+			line-height: normal;
+			text-indent: 10px;
     }
     &:hover {
-        border-color: #CCCCCC;
-        cursor: pointer;
+			cursor: pointer;
+			border: 2px solid #523FDC;
+			&::placeholder {
+				color: #523FDC;
+			}
     }
 `;
 
