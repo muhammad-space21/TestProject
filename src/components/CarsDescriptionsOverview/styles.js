@@ -6,4 +6,5 @@ export const Container = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
+  position: relative;
 `;

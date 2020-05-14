@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { Container, SliderStyled, ButtonWrapper } from './styles';
+import { 
+  Container, 
+  SliderStyled, 
+  ButtonWrapper,
+  Wrapper
+} from './styles';
 
 import ButtonPrimary from '../Buttons/ButtonPrimary';
 
@@ -59,28 +64,28 @@ class CarouselOfCars extends React.Component {
     };
 
     return (
-      <>
-      <SliderStyled {...settings}>
-        <Container>
-          <img src={Img1} alt='' />
-        </Container>
-        <Container>
-          <img src={Img2} alt=''/>
-        </Container>
-        <Container>
-          <img src={Img3} alt=''/>
-        </Container>
-        <Container>
-          <img src={Img4} alt=''/>
-        </Container>
-        <Container>
-          <img src={Img5} alt=''/>
-        </Container>
-      </SliderStyled>
-      <ButtonWrapper>
-        <ButtonPrimary applyBtn >ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
-      </ButtonWrapper>
-      </>
+      <Container>
+        <SliderStyled {...settings}>
+          <Wrapper>
+            <img src={Img1} alt='' />
+          </Wrapper>
+          <Wrapper>
+            <img src={Img2} alt=''/>
+          </Wrapper>
+          <Wrapper>
+            <img src={Img3} alt=''/>
+          </Wrapper>
+          <Wrapper>
+            <img src={Img4} alt=''/>
+          </Wrapper>
+          <Wrapper>
+            <img src={Img5} alt=''/>
+          </Wrapper>
+        </SliderStyled>
+        <ButtonWrapper>
+          <ButtonPrimary applyBtn >ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+        </ButtonWrapper>
+      </Container>
     );
   }
 };

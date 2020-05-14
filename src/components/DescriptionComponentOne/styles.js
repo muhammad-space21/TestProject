@@ -4,7 +4,8 @@ export const Container = styled.div`
   width: 100vw;
   height: 98vh;
   background-color: black;
-  margin-top: ${(props) => props.descriptionPage ? '50px' : '0'};
+  position: relative;
+  margin-top: ${(props) => props.descriptionPage ? '100px' : '0'};
   @media screen and (max-width: 991px) {
     height: fit-content;
   }
