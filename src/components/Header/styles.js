@@ -24,21 +24,21 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.div`
-  width: 70%;
+  width: 80%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   font-size: 83px;
   line-height: 90px;
   font-weight: 400;
   color: white;
   font-family: 'Roboto' sans-serif;
-  margin-top: -50px;
     h2 {
       font-size: 35px;
       font-weight: 300;
-      line-height: 28px;
+      line-height: 40px;
       color: white;
       font-family: 'Montserrat' sans-serif;
       margin-top: 20px;
@@ -57,11 +57,11 @@ export const Heading = styled.div`
 `;
 
 export  const ButtonContainer = styled.div`
-  width: 70%;
+  width: 80%;
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 30px;
   @media screen and (max-width: 1100px) {
     justify-content: center;

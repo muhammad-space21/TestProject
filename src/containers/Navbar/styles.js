@@ -8,10 +8,10 @@ export const NavbarStyled = styled(Navbar)`
   background-color: #000000;
   font-family: 'Varela Round', sans-serif;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 30px;
   position: fixed;
   @media screen and (max-width: 991px) {
-    padding-right: 40px;
+    padding-right: 30px;
     padding-left: 30px;
   }
 `;
@@ -27,6 +27,7 @@ export const NavStyled = styled(Nav)`
       justify-content: space-evenly;
       background-color: white;
       height: 400px;
+      margin-right: 20px;
     }
 `;
 

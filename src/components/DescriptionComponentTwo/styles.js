@@ -134,6 +134,7 @@ export const ButtonsWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 `;
 
