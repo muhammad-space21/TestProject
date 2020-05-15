@@ -50,17 +50,17 @@ const MenuCars = () => {
     : fadeIn(".fadeIn");
 
   return (
-      <Container ref={sectionRef}>
-        <Heading className='fadeIn'>
-            ВЫБЕРИТЕ АВТОМОБИЛЬ В РАССРОЧКУ
-        </Heading>
-        <HR />
-        <Row className='fadeIn'>
-          { carsDataMenu.map(({id, ...otherProps}) =>
-            (<MenuItems className='fadeIn' key={id} {...otherProps} />)
-          )}
-        </Row>
-      </Container>
+    <Container className='fadeIn' ref={sectionRef}>
+      <Heading>
+          ВЫБЕРИТЕ АВТОМОБИЛЬ В РАССРОЧКУ
+      </Heading>
+      <HR />
+      <Row>
+        { carsDataMenu.map(({id, ...otherProps}) =>
+          (<MenuItems key={id} {...otherProps} />)
+        )}
+      </Row>
+    </Container>
   );
 };
 

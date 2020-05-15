@@ -7,13 +7,7 @@ export const NavbarStyled = styled(Navbar)`
   height: 100px;
   background-color: #000000;
   font-family: 'Varela Round', sans-serif;
-  padding-left: 50px;
-  padding-right: 30px;
   position: fixed;
-  @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
 `;
 
 export const NavStyled = styled(Nav)`
@@ -27,7 +21,10 @@ export const NavStyled = styled(Nav)`
       justify-content: space-evenly;
       background-color: white;
       height: 400px;
+      width: 98%;
+      margin-left: 0;
       margin-right: 20px;
+      padding-left: 0;
     }
 `;
 
@@ -44,7 +41,7 @@ export const NavLinkStyledBlack = styled(Nav.Link)`
     padding-right: 20px;
   }
   @media screen and (max-width: 991px) {
-    color:  #523FDC;
+    color: #523FDC;
     margin-right: 0px;
   }
 `;
@@ -99,6 +96,7 @@ export const NavItemStyled = styled(Nav.Item)`
     margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
       @media screen and (max-width: 991px) {
+        margin-left: 0px;
         color: black;
         &:hover {
           color: #523FDC;

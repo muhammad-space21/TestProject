@@ -151,14 +151,14 @@ export const IconsWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 500;
-  color: black;
+  color: #523FDC;
   margin-top: 40px;
     span {
-      font-size: 15px;
-      color: black;
+      font-size: 19px;
+      color: #523FDC;
       margin-left: 3px;
     }
 `;

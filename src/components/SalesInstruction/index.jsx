@@ -41,11 +41,11 @@ const SalesInstruction = () => {
   };
    // Animation for fading out
   const fadeOut = element => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out"
-    });
+    // gsap.to(element, 1, {
+    //   opacity: 0,
+    //   y: -20,
+    //   ease: "power4.out"
+    // });
   };
 
    // checking to see when the vieport is visible to the user

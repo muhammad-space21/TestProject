@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
-  height: 98vh;
+  height: 110vh;
   background-color: black;
   @media screen and (max-width: 1100px) {
     height: fit-content;
@@ -17,6 +17,7 @@ export const Row = styled.div`
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-bottom: 50px; 
     @media screen and (max-width: 1100px) {
       display: flex;
       flex-direction: column;
@@ -152,14 +153,14 @@ export const IconsWrapper = styled.div`
 `;
 
 export const Details = styled.div`
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 500;
-  color: white;
+  color: #523FDC;
   margin-top: 40px;
     span {
-      font-size: 15px;
-      color: white;
+      font-size: 19px;
+      color: #523FDC;
       margin-left: 3px;
     }
 `;

@@ -30,6 +30,8 @@ export const Container = styled.button`
   color: white;
   &:hover {
     cursor: pointer;
+    background-image: 
+      linear-gradient(to top, #523fdc, #3437a6, #222b71, #191d3d, #0b0b0c);
   }
   &:focus {
     outline: none;
@@ -52,6 +54,7 @@ export const Secondary = css`
     &:hover {
       cursor: pointer;
       background-color: #00CE1B;
+      background-image: none;
     }
     &:focus {
       outline: none;
@@ -72,7 +75,8 @@ export const ApplyBtn = css`
   transition: 0.5s;
     &:hover {
       cursor: pointer;
-      background-image: linear-gradient(to top, #523fdc, #3d36a8, #2e2c75, #212045, #141319);
+      background-image: 
+        linear-gradient(to top, #523fdc, #3d36a8, #2e2c75, #212045, #141319);
     }
     &:focus {
       outline: none;
@@ -148,6 +152,8 @@ export const OrderBtn = css`
     }
     &:hover {
       cursor: pointer;
+      background-image: 
+        linear-gradient(to top, #523fdc, #3437a6, #222b71, #191d3d, #0b0b0c);
     }
     &:focus {
       outline: none;
