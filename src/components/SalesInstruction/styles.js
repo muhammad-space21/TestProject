@@ -100,3 +100,12 @@ export const Text = styled.span`
   margin-left: 50px;
   margin-right: 50px;
 `;
+
+export const BtnWrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+`;

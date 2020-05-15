@@ -8,7 +8,8 @@ import {
   Row,
   Card,
   Title,
-  Text
+  Text,
+  BtnWrapper
 } from './styles';
 
 import ButtonPrimary from '../Buttons/ButtonPrimary';
@@ -65,13 +66,17 @@ const SalesInstruction = () => {
               Подберите для себя цвет, характеристики, 
               дополнительные опции автомобиля и оставьте заявку.
           </Text>
-          <ButtonPrimary secondary>ВЫБРАТЬ АВТО</ButtonPrimary>
+          <BtnWrapper>
+              <ButtonPrimary secondary>ВЫБРАТЬ АВТО</ButtonPrimary>
+          </BtnWrapper>
         </Card>
         <Card>
           <img src={IconMarketing} alt="icon"/>
           <Title>Обработка заявки</Title>
           <Text>С Вами свяжеться наш сотрудник для уточнения данных по Вашей заявке.</Text>
-          <ButtonPrimary secondary>ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+          <BtnWrapper>
+              <ButtonPrimary secondary>ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+          </BtnWrapper>
         </Card>
       </Row>
       <Row className='fadeIn' ref={sectionRef}>
@@ -82,7 +87,9 @@ const SalesInstruction = () => {
               Оформите договор и внести первоначальный взнос за автомобиль. 
               После всей процедуры Вы в скором времени получите свой автомобиль.
           </Text>
-          <ButtonPrimary secondary>ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+          <BtnWrapper>
+              <ButtonPrimary secondary>ОСТАВИТЬ ЗАЯВКУ</ButtonPrimary>
+          </BtnWrapper>
         </Card>
         <Card>
           <img src={IconStartup} alt="icon"/>
@@ -91,7 +98,9 @@ const SalesInstruction = () => {
               Наслаждайтесь покупкой и гарантийным обслуживанием. 
               Платите маленькими платежами и получайте бонусы ZMARKET
           </Text>
-          <ButtonPrimary secondary>ПОЛУЧИТЬ АВТО</ButtonPrimary>
+          <BtnWrapper>
+              <ButtonPrimary secondary>ПОЛУЧИТЬ АВТО</ButtonPrimary>
+          </BtnWrapper>
         </Card>
       </Row>
     </Container>
