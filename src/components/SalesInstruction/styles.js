@@ -70,6 +70,7 @@ export const Card = styled.div`
   img {
     width: 70px;
     height: 70px;
+    margin-top: 30px;
     margin-bottom: 50px;
   }
   @media screen and (max-width: 900px) {
