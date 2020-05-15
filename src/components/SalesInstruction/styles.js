@@ -63,6 +63,9 @@ export const Card = styled.div`
   justify-content: center;
   border: 1.5px solid #E5E5E5;
   background-color: #FCFCFC;
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+    }
 
     &:hover {
       border-color: #00CE1B;
