@@ -7,14 +7,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 200px;
+  position: relative;
+  background-color: white;
 `;
 
 export const Heading = styled.h1`
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 55px;
   color: #000000;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 50px;
   margin-left: 50px;
   @media screen and (max-width: 1000px) {
@@ -41,6 +43,7 @@ export const Row = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 100px;
+  position: relative;
   @media screen and (max-width: 900px) {
     width: 90vw;
     display: flex;
@@ -60,6 +63,7 @@ export const Card = styled.div`
   justify-content: center;
   border: 1.5px solid #E5E5E5;
   background-color: #FCFCFC;
+
     &:hover {
       border-color: #00CE1B;
     }

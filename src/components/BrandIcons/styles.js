@@ -8,6 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #dfe6e9;
+  position: relative;
 `;
 
 export const Row = styled.div`
@@ -48,7 +49,7 @@ export const ImgHyundai = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 55px;
   color: #000000;

@@ -10,20 +10,17 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   background-color: white;
+  position: relative;
 `;
 
 export const Heading = styled.h1`
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 55px;
   color: #000000;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 50px;
   margin-left: 50px;
-  @media screen and (max-width: 1000px) {
-    font-size: 38px;
-    line-height: 45px;
-  }
   @media screen and (max-width: 600px) {
     font-size: 28px;
     line-height: 35px;
