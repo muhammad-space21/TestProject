@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 65px;
   @media screen and (max-width: 991px) {
     padding: 20px;
   }
